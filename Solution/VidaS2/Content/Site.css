@@ -1,24 +1,36 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/*Global---------------------------------------------------------------------*/
+@font-face {
+	font-family: Rabelo;
+	src: url('~/fonts/Rabelo Regular.otf');
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+body {
+	background-image: url('images/patterns/global_background.png');
+}
+	
+/*_Layout.cshtml-------------------------------------------------------------*/
+	#page-title {
+	font-family: Rabelo;
+	margin-left: 2%;
+	background-image: url("~/Content/images/patterns/global_background.png");
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+#nav-bar {
+	color: white;
+	margin-bottom: 2%;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+/* All links in nav-bar*/
+#nav-bar a:hover, #nav-bar a:visited, #nav-bar a:active, #nav-bar a:link {
+	color: white;
+	text-decoration: none;
+}
+
+#footer {
+	padding: 1%;
+}
+
+.footer-copyright > .container {
+	margin: 0;
+	color: white;
 }

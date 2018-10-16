@@ -1,18 +1,43 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title</title>
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/modernizr")
+	
+	<!-- Materialize -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 </head>
 <body>
 
+	<header>
+		<h1 id="page-title" class="red-text text-accent-4"></h1>
+		<nav id="nav-bar" class="red accent-4">
+			<ul id="nav-mobile" class="left hide-on-med-and-down">
+				<li><a href="sass.html">Inicio</a></li>
+				<li><a href="badges.html">Logros</a></li>
+				<li><a href="collapsible.html">Proyectos</a></li>
+				<li><a href="collapsible.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
 	@RenderBody()
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+	<footer class="page-footer red accent-4">
+		<div class="footer-copyright">
+			<div class="container">
+				© Vida S2 2018 Todos los derechos reservados.
+			</div>
+		</div>
+	</footer>
+
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+	@RenderSection("scripts", required: false)
+	<!-- Materialize -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
 </html>
